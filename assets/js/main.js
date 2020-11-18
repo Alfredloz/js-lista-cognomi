@@ -13,8 +13,8 @@ var cancel = document.getElementById('cancel');
 
 //listener sul bottone
 btnLista.addEventListener('click', function() {
-    //inserimento cognome lista
-
+    //cancellazione lista
+    displayList.innerHTML= '';
     //presa dei valori
     var lista = document.getElementById('input_lista').value;
     //inserimento cognomi nell'array
@@ -45,11 +45,11 @@ btnLista.addEventListener('click', function() {
      // }
 
      //*****************************************//
-     // prova ciclo do while
 
 })
 
 cancel.addEventListener('click', function() {
   listaInput.innerHTML= '';
   displayList.innerHTML= '';
+  listaCognomi.shift();
 })
